@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    
+}
+
+
+body{
+    background-color: #fff;
+    width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+    
+}
+
+
+
+header{
+    height: 9vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    position: fixed;
+    z-index: 1000;
+    
+    
+}
+
+.logo-navbar {
+    width: 24%;
+    display: flex;
+    cursor: pointer;
+}
+.logo-navbar img{
+    height: 60px;
+    margin-left:40px;
+}
+.header-icon{
+    width: 29%;
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    margin-right:20px;
+}
+.header-icon img{
+    height: 100%;
+}
+
+.navbar li a {
+   padding: 20px 30px;
+   font-weight: 600;
+   font-size: 15px;
+   color: #000;  
+   text-decoration: none;
+   cursor: pointer;
+   transition: all 0.1s ease 0s;
+}
+.navbar li a:hover{
+    color: #0FB18A;
+}
+header ul{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+
+.pesquisa {
+  background: #fff;
+  border: 1px solid #000;
+  font-size: 14px;
+  color: #000;
+  height: 20px;
+  transition: 0.5s ease;
+  width: 15vw;  
+  border-radius: 10px;
+  padding: 5px;
+}
+.pesquisa:hover {
+    border: 1px solid #000;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.212);
+   
+}
+
+.divpesquisa{
+    display: flex;
+}
+
+
+
+.div {
+    width: 100%;
+    height: 10vh;
+}
+
+
+.header{
+    height: 9vh;
+    
+}
+
+/* ==================== CONTAINER================ */
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* ================ TITULO ============== */
+
+.infoProd{
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+}
+
+/* =================== PRODUTO ===================== */
+
+.imgProd{
+
+    width: 40%;
+    height: 100%;
+    flex-direction:row ;
+}
+
+.imgProd img {
+    width: 150px;
+}
+
+.imgProd .txt {
+    width: 100%;
+    background: #ccc;
+    height: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+.txtImgprod{
+    width: 100%;
+    height: 19.3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.txtImgprod p{
+    font-weight: 600;
+    margin-left: 40px;
+}
+
+
+.imgProd .txt p {
+    color: #000;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+
+}
+
+/* =================== PREÇO ===================== */
+
+.precoProd{
+    width: 20%;
+    height: 100%;
+}
+
+
+.precoProd p {
+
+    color: #000;
+    font-size: 17px;
+    text-align: center;
+    margin: 50px;
+    font-weight: 600;
+
+}
+
+.precoProd .txt {
+    width: 100%;
+    background: #ccc;
+    height: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.precoProd .txt p{
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* =================== QUANTIDADE ===================== */
+
+
+.qtdProd{
+    width: 20%;
+    height: 100%;
+    
+}
+
+.qtdProd p {
+    color: #000;
+    font-size: 17px;
+    text-align: center;
+    margin: 50px;
+    font-weight: 600;
+}
+
+
+.qtdProd .txt {
+    width: 100%;
+    background: #ccc;
+    height: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.qtdProd .txt p {
+
+    color: #000;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+
+}
+
+/* =================== TOTAL ===================== */
+.totalProd{
+    width: 20%;
+    height: 100%;
+
+}
+
+
+.totalProd .txt {
+    width: 100%;
+    background: #ccc;
+    height: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.totalProd .txt p{
+    color: #000;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+.totalProd p {
+    color: #0FB18A;
+    font-size: 17px;
+    text-align: center;
+    margin: 50px;
+    font-weight: 600;
+}
+
+.txt2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#remove{
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    color: #ccc;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    
+}
+
+#remove:hover{
+    color: red;
+}
+
+
+

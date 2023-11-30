@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100vw;
+    height: 10vh;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.div-Header {
+    width: 100%;
+    height: 90%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+}
+
+.logo {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 140px;
+    cursor: pointer;
+}
+
+.header-names {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.header-names ul {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header-names ul li {
+    color: #ffff;
+    font-size: 1.0rem;
+    transition: color 0.2s;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.header-names li:hover {
+    color: #0FB18A;
+}
+
+.header-names li:active {
+    color: #0FB18A;
+}
+
+.header-icons {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.icons {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header-icons input {
+    border: 1px solid transparent;
+    background-color: rgba(129, 122, 122, 0.384);
+    border-radius: 20px;
+    width: 60%;
+    height: 60%;
+    padding: 10px;
+    color: #fff;
+}
+
+.icons img {
+    width: 30px;
+    cursor: pointer;
+}
+
+
+/* main */
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.vazio {
+    width: 50vw;
+    height: 100vh;
+    background-image: url(../../Imagens/Background/fundoLogin.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1000;
+}
+
+.efeito {
+    box-shadow: 35px 0px 200px 300px rgb(0, 0, 0);
+    z-index: 100;
+}
+
+.conteudo {
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulos {
+    color: #fff;
+    height: 150px;
+}
+
+.titulos>h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.titulos>p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.campos {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.campos>input {
+    width: 60%;
+    height: 6vh;
+    min-height: 40px;
+    border-radius: 10px;
+    background-color: #595B6340;
+    color: #ffffff;
+    border: none;
+    padding: 0 15px;
+    font-size: 15px;
+}
+
+.campos>input:hover {
+    background-color: #97979740;
+    transition-duration: 1.5s;
+}
+
+input::placeholder {
+    color: #FFFFFF66;
+    opacity: 0.8;
+}
+
+.enviar {
+    width: 100%;
+    margin-top: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-enviar {
+    padding: 15px 150px;
+    border-radius: 15px;
+    background-color: #0FB18A;
+    color: #fff;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 24px;
+    cursor: pointer
+}
+
+.login {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.login>p {
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.login>a {
+    color: #0FB18A;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 5px;
+}
